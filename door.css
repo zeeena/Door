@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.icon {
+    width: 50px;
+}
+
+.container img {
+    width: 13%;
+}
+
+#imgStatus {
+    width : 900px;    
+}
+
+.container{
+    margin: 10px;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    margin-top: 50px;
+}
+
+.container > button{
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 3px 0;
+    font-size: 15px;
+    border: none;
+    background: #D5FADC;
+    transition: transform .5s ease;
+}
+
+.container > button:hover{
+    background: #a3e9b0;
+    transform: scale(.97);
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door</title>
+
+    <link rel="icon" href="style/Gdoor.jpg" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="door.css">
+
+</head>
+<body>
+    
+<script>
+function openDoor(){
+    document.getElementById("imgStatus").src = "style/opendoor.jpg";
+    document.getElementById("doorStatus").innerHTML = "Ola!";
+    document.getElementById('mp3File').play();
+}
+
+function closeDoor(){
+    document.getElementById("imgStatus").src = "style/Gdoor.jpg";
+    document.getElementById("doorStatus").innerHTML = "Bye!";
+    document.getElementById('mp3File').pause();
+}
+</script>
+
+<div class="container">
+    <h1 id="doorStatus" style="color: rgb(68, 158, 65);">Welcome Home!</h1>
+    <img src="style/Gdoor.jpg" id="imgStatus">
+    <br>
+
+        <!--        <audio controls autoplay loop>-->
+
+    <audio src="style/ytmp3free.cc_beach-house-ambience-youtubemp3free.org.mp3" id="mp3File"></audio>
+
+    <button onclick="openDoor()">OPEN</button>
+    <button onclick="closeDoor()">CLOSE</button>
+</div>
+    
+</body>
+
+</html>
